@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    color: #333333;
+    font-family: "proxima-nova",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    word-spacing: .025em;
+    letter-spacing: -.01em;
+}
+/* *****************************Section #1****************************** */
+#section_one{
+    background: url(./Cookstown\ pic1.png) no-repeat center fixed;
+    background-position: top;
+    background-size: cover;
+}
+/* NavBar */
+nav{
+    background: linear-gradient(#43404036, rgba(255, 255, 255, 0.219));
+    margin-bottom: 0;
+}
+.main-nav{
+    list-style: none;
+    display: flex;
+    font-size: 1.3em;
+    margin: 0;
+}
+.main-nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 0 30px rgba(0,0,0,.35);
+}
+.main-nav li{
+    padding: 20px;
+}
+.logo img{
+    width: 4em;
+}
+.push{
+    display: flex;
+    margin-left: auto;
+}
+/* Landing page Content */
+.wrapper_content{
+    height: 92vh;
+    
+    background: linear-gradient( rgba(255, 255, 255, 0.082), #4340401f);
+}
+.wrapper_content h1{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 0;
+    color: #ffffff;
+    z-index: 100;
+    text-shadow: 0 0 30px rgba(0,0,0,.35);
+}
+
+/* *****************************Section #2****************************** */
+#section_two{
+    color: #333333;
+    font-size: 1.5em;
+}
+.mini-container{
+    margin: 5em 172px;
+} 
+.mini_content{
+    margin-top: 62px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+.right_side{
+    font-size: 1.3rem;
+    width: 635px;
+}
+.left_side a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 20px;
+    font-size: 0.7em;
+    border-bottom: 3px solid green;
+    width: 7em;
+    text-align: center;
+    cursor: pointer;
+}
+.left_side{
+    justify-self: flex-start;
+    margin-bottom: 30px;
+    align-self: center;
+}
+.left_side #push_down{
+    margin-top: 10px;
+}
+
+/* *****************************Section #3****************************** */
+.gallery{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(285px,1fr));
+    margin-top: 40px;
+    
+}
+.card{
+    width: 285px;
+    height: 317px;
+    border: none;
+    transition: all 1s;
+    cursor: pointer;
+    font-weight: 500;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+    width: 100%;
+    height: 250px;
+}
+.card-tittle{
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* *****************************Section #4****************************** */
+#section_four .card{
+    height: 576px;
+}
+#section_four .card img{
+    height: 440px;
+}
+.card-subtitle{
+    font-size: 0.9em;
+    color: #333333a1;
+}
+/* *****************************Section #5****************************** */
+#section_five{
+    margin-bottom: 0;
+}
+.mini-contact img{
+    width: 100%;
+    height: 500px;
+}
+.mini-contact{
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    background-color: #181818;
+    color: #ffffff;
+}
+@media only screen and (max-width: 725px){
+    .mini-contact{
+        display: block;
+    }
+}
+.mini-contact .content-side{
+    justify-self: center;
+    align-self: center;
+    
+}
+hr{
+    width: 40px;
+    height: 8px;
+    background-color: rgb(4, 131, 4);
+    margin: initial;
+}
+.content-side div{
+    width: 450px;
+}
+.content-side .tittle{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 20px auto;
+}
+.sub-tittle a{
+    color: rgb(4, 131, 4);
+}
+
+/* *****************************Footer****************************** */
+footer{
+    /* height: 30vh; */
+    background-color: #2699fb;
+    color: #ffffff;
+    margin:0;
+    align-items: center;
+    padding: 30px;
+}
+footer .mini-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    align-items: flex-end;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.col{
+    text-align: left;
+    padding: 0;
+}
+.top-tittle{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.col a{
+    color: #ffffff;
+}
+.subscript-tittle{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.mini-subscript{
+    font-size: 0.9em;
+    color: #d3d3d3d3;
+}
+.col input{
+    padding: 5px 10px;
+    border: 1px solid #ffffff88;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+    margin-left: 20px;
+    display: inline-block;
+    margin: 0;
+    outline: none;
+    padding-left: 10px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    padding-left: 10px;
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+}
+
+.col button{
+    padding: 5px 20px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #2699fb;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+.col button:hover{
+    background-color: #2699fb;
+    color: #ffffff;
+}
+
